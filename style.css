@@ -1,0 +1,301 @@
+body {
+  width: 100%;
+  height: 3300px;
+}
+/* navbar */
+/* Gaya CSS Anda */
+.navbar {
+  background-color: transparent; /* Warna dengan opacity */
+  transition: background-color 0.3s;
+}
+.container img {
+  width: 30px;
+  height: 30px;
+}
+/* akhir navbar */
+.header img {
+  width: 100%;
+  height: 1000px;
+}
+.header-txt {
+  position: absolute;
+  top: 30%;
+  color: white;
+  padding: 10px;
+  margin-left: 30px;
+  text-align: left; /* Set text alignment to left for both desktop and mobile */
+}
+.header-txt p {
+  width: 450px; /* Use fixed width for both desktop and mobile */
+  font-size: 20px;
+}
+
+.button-container {
+  position: relative;
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+.custom {
+  background-color: transparent;
+  color: white;
+  border: 5px solid #222d24;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 9%;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.custom:hover {
+  background-color: #222d24; /* Warna latar belakang saat dihover */
+  color: white; /* Warna teks saat dihover */
+}
+
+/* Add Media Query for Mobile Styles */
+@media (max-width: 768px) {
+  .header-txt {
+    top: 20%;
+    margin-left: 15px;
+    text-align: center;
+  }
+
+  .header-txt p {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .header-txt h4 {
+    margin-top: -30px;
+    font-size: 36px;
+  }
+
+  .button-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .custom {
+    margin-top: -3px;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk perubahan warna */
+  }
+
+  .custom:hover {
+    background-color: #222d24; /* Warna latar belakang saat dihover */
+    color: white; /* Warna teks saat dihover */
+  }
+}
+section {
+  padding-top: 5rem;
+}
+
+/* Styles for both desktop and mobile */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Tengahkan vertikal */
+  align-items: center; /* Tengahkan horizontal */
+  text-align: center;
+  padding: 50px 0;
+}
+#about{
+  margin-top: 5px;
+}
+.about h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Gaya CSS untuk menyusun bersebelahan dan teks di tengah dengan float */
+.vision-and-mission {
+  overflow: hidden; /* Mengatasi float */
+}
+
+.vision,
+.mission {
+  width: 50%; /* Setengah lebar */
+  float: left; /* Float kiri */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Teks di tengah */
+}
+
+.vision h2,
+.mission h2 {
+  margin-bottom: 10px;
+}
+
+/* Hapus margin kanan pada elemen terakhir */
+.vision:last-child,
+.mission:last-child {
+  margin-right: 0;
+}
+/* product */
+.product {
+  width: auto;
+  height: auto;
+  margin-top: 350px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.product h1{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.slideimg {
+  background-color: #222d24;
+  height: auto;
+  margin-top: 5px;
+}
+
+/* slidebar */
+#carouselExampleCaptions {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-inner {
+  max-height: 800px;
+  margin-top: 30px;
+}
+
+
+/* CSS untuk tombol navigasi carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: 20px;
+}
+
+/* CSS untuk caption pada carousel */
+.carousel-caption {
+  max-height: 20px;
+  overflow: hidden;
+  display: block;
+}
+
+/* CSS untuk mobile menggunakan media query */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carousel-inner {
+    max-height: 1000px;
+    display: block;
+  }
+
+  /* CSS untuk tombol navigasi carousel di mobile */
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 40px;
+  }
+
+  /* CSS untuk caption pada carousel di mobile */
+  .carousel-caption {
+    max-height: 150px;
+    display: block;
+  }
+ 
+}
+
+/* ... (other styles) ... */
+.slideimg{
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slideimg:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slideimg:hover .image-overlay img {
+  opacity: 1;
+}
+
+/* contact */
+.contact {
+  width: 100%;
+  height: 760px;
+}
+/* footer */
+  .footer-line {
+    border-top: 5px solid black; /* Atur gaya garis sesuai preferensi Anda */
+    margin-top: 20px; /* Atur jarak antara garis dan konten footer */
+    padding-top: 0; /* Atur jarak antara garis dan konten footer */
+  }
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #222d24;
+}
+.complogo img {
+  margin-top: 20px;
+  margin-left: 20%;
+  width: 200px;
+  height: 70px;
+}
+.namecomp {
+  width: auto;
+  color: white;
+  height: 20px;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+.email {
+  width: auto;
+  color: white;
+  height: 20px;
+  margin-top: 40px;
+  margin-left: 20%;
+}
+.link {
+  width: auto;
+  color: white;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
